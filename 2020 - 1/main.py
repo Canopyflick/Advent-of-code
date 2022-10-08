@@ -8,9 +8,12 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+
 # Iterate of elements in list of numbers
 # Add every element together to get the sum
 
+# DRY principle:
+# Don't repeat yourself
 
 def part_one(list_of_numbers):
     # Iterate over all combinations
@@ -33,6 +36,7 @@ def part_two(list_of_numbers):
                 if x + y + z == 2020:
                     print(x, y, z, "\n", x * y * z)
 
+
 def sum(list_of_numbers):
     # Sum is initially 0
     sum = 0
@@ -40,6 +44,7 @@ def sum(list_of_numbers):
         # Add the new value to the sum
         sum = sum + x
     return sum
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
